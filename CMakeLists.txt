@@ -38,3 +38,43 @@ add_executable(05_protocol_parser
 target_include_directories(05_protocol_parser PRIVATE src/05_protocol_parser)
 add_test(NAME protocol_parser COMMAND 05_protocol_parser)
 
+add_executable(06_ring_buffer
+  src/06_ring_buffer/main.c
+  src/06_ring_buffer/ring_buffer.c
+)
+target_include_directories(06_ring_buffer PRIVATE src/06_ring_buffer)
+add_test(NAME ring_buffer COMMAND 06_ring_buffer)
+
+add_executable(07_state_machine
+  src/07_state_machine/main.c
+  src/07_state_machine/state_machine.c
+)
+target_include_directories(07_state_machine PRIVATE src/07_state_machine)
+add_test(NAME state_machine COMMAND 07_state_machine)
+
+add_executable(08_memory_bugs src/08_memory_bugs/main.c)
+add_test(NAME memory_bugs COMMAND 08_memory_bugs)
+
+add_executable(09_unit_test_framework
+  src/09_unit_test_framework/main.c
+  src/09_unit_test_framework/mini_test.c
+)
+target_include_directories(09_unit_test_framework PRIVATE src/09_unit_test_framework)
+add_test(NAME unit_test_framework COMMAND 09_unit_test_framework)
+
+add_executable(10_serial_protocol_parser
+  src/10_serial_protocol_parser/main.c
+  src/10_serial_protocol_parser/serial_parser.c
+)
+target_include_directories(10_serial_protocol_parser PRIVATE src/10_serial_protocol_parser)
+add_test(NAME serial_protocol_parser COMMAND 10_serial_protocol_parser)
+
+add_executable(11_mini_malloc
+  src/11_mini_malloc/main.c
+  src/11_mini_malloc/mini_malloc.c
+)
+target_include_directories(11_mini_malloc PRIVATE src/11_mini_malloc)
+add_test(NAME mini_malloc COMMAND 11_mini_malloc)
+
+add_executable(12_linux_process_pipe src/12_linux_process_pipe/main.c)
+add_test(NAME linux_process_pipe COMMAND 12_linux_process_pipe)
