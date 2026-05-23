@@ -1,0 +1,10 @@
+{
+  "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+  "C_Cpp.default.cStandard": "c11",
+  "cmake.generator": "Ninja",
+  "editor.formatOnSave": true,
+  "files.associations": {
+    "*.h": "c"
+  }
+}
+
